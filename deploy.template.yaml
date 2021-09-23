@@ -3,6 +3,6 @@ spec:
     - name: sample-python
       git:
         branch: main
-        repo_clone_url: https://github.com/digitalocean/sample-python.git
+        repo_clone_url: https://github.com/Oscuras98/PRS.git
     databases:
     - name: example-db

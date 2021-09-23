@@ -1,0 +1,18 @@
+html {
+    font-size: 62.5%;
+}
+
+p{
+    white-space: pre-wrap;
+    white-space: moz-pre-warp;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wap;
+    word-wrap: break-word;
+}
+h3 {
+    white-space: pre-wrap;
+    white-space: moz-pre-warp;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wap;
+    word-wrap: break-word;
+}

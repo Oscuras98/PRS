@@ -1,0 +1,11 @@
+﻿html {
+    font-size: 62.5%;
+}
+
+pre{
+    white-space: pre-wrap;
+    white-space: moz-pre-warp;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wap;
+    word-wrap: break-word;
+}

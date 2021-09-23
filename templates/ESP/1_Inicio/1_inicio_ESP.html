@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="author" content="Pirate">
+    <meta name="copyright" content="© 2021 PRS">
+    <meta name="description" content="Pirate Radio Show a website that teaches programing while enjoying the video games.">
+    <meta name="keywords" content="pirate, radio, show, anonymous, anonymous radio station, c++, c plus plus, c, c#, linux, coding, tutorial, tutorials, course, learn, courses, hacking, ethical, operating, system, systems, gaming, live, livestream, java, pyhton, python3, flask, websites, web, website, mobile application, mobile, phones, phone, app, applicationrust, free games, youtube, twitch, make, money, online, community, freelancer, freelancers, digital, home office, basics of cpp, cpp, g++, basics of coding, basics of programing, computing, free, games, free games, open, source, open source, maths, mathematics, physics, science, fiction, sience fiction, windows, microsoft, visual studio, visual, studio, source command, commands, syntax, compile, set up, install, source, example, examples, security, cyber, cyber security, english, beginner, c++ for beginners, beginners, ctf, CTF, capture the flag, capture flag, coding challenge, challenge, pen test, penetration, pentest, penetration testing, testing, object oriented programming, object, oriented, key logger, keylogger, key, logger, cloud, hackers, cyber hackers, hactivists, hacktivism, steam, steam punks, punks, punk , steam punk, epic games, epic, GeForce Now, Nvidia, nvidia, NVIDIA, NVidia, geforce, geforce now, exercise, exercises, experiment, experiments, bit, coin, coins, BTC, btc, invite, gifts, gift, crypto, currency, eng">
+    <meta name="Subject" content="Web Page Subject">
+    <meta name="expires" content="never" />
+    <meta name="viewport" content="width=device-width" initial-scale="1.0">
+    <meta name="google-site-verification" content="UMBwmsZQFss_tZhxUd4JMSZglv7_XytJHEbeKGM2b4Q" />
+    <meta http-equiv="content-language" content="es">
+    <meta name="language" content="Spanish">
+    <meta name="Distribution" content="Global">
+    <title>Pirata Radio Show</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/spinner.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/auto.min.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/market.css')}}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.png')}}">
+</head>
+
+<body onload="randombg()">
+    <header>
+
+        <nav id="services">
+            <div class="container">
+                <form style="z-index: 1; position: relative;">
+                    <!-- class="buttons"  error itt Check mobile version with & without class--->
+                    <select name="Lang-3" onchange="javascript:handleSelect(this);">
+                        <option value="#">
+                            Sigue nos en:
+                        </option>
+
+                        <option value="https://www.twitch.tv/pirateradioshow98">
+                            ☠| Twitch -PRS- |☠
+                        </option>
+
+                        <option value="https://www.twitch.tv/VieraGuti">
+                            ☠| Twitch VieraGuti|☠
+                        </option>
+
+                        <option value="https://www.twitch.tv/legozgz">
+                            ☠| Twitch -LEGO- |☠
+                        </option>
+
+                        <option value="https://www.twitch.tv/beyker1965">
+                            ☠| Twitch -BEYKER- |☠
+                        </option>
+
+                        <option value="https://www.youtube.com/channel/UC6JWt6KSex34qH7rpokdTpg">
+                            ☠| Youtube -BEYKER- |☠
+                        </option>
+
+                        <option value="https://www.youtube.com/channel/UCmd2roksoxIvMrE8R8p6u3g">
+                            ☠| Youtube -Pirate Code- |☠
+                        </option>
+
+                        <option value="https://www.facebook.com/Pirate-Radio-Show-103686634953174">
+                            ☠| Facebook -PRS- |☠
+                        </option>
+
+                        <option value="https://twitter.com/show_pirate">
+                            ☠| Twitter -PRS- |☠
+                        </option>
+
+                        <option value="https://www.instagram.com/pirateradioshow98/">
+                            ☠| Instagram -PRS- |☠
+                        </option>
+                    </select>
+                    <select name="Lang-3" onchange="javascript:handleSelect(this);">
+                        <option value="#">
+                            ☠| Chat |☠
+                        </option>
+                        <option value="https://s.team/chat/FVI1GpWg">
+                            ☠| Steam |☠
+                        </option>
+                        <option value="https://discord.gg/3t82PbymUc">
+                            ☠| Discord |☠
+                        </option>
+                    </select>
+
+                    <select name="Lang-3" onchange="javascript:handleSelect(this);">
+                        <option value="#">
+                            ☠| Para Programadores: |☠
+                        </option>
+
+                        <option value="/Aprender_ESP">
+                            ☠| Estudia Programación |☠
+                        </option>
+
+                        <option value="/Penetracion_1_ESP">
+                            ☠| HACKING Y PENETRACIÓN DE SISTEMAS |☠
+                        </option>
+
+                        <option value="https://github.com/Oscuras98/">
+                            ☠| GitHUB |☠
+                        </option>
+
+                        <option value="https://www.facebook.com/groups/765324447394866">
+                            ☠| Grupo de Facebook |☠
+                        </option>
+                    </select>
+                    <button formaction="/Juegos_GRATIS_ESP">
+                        ☠| Videojuegos Gratis |☠
+                    </button>
+
+                    <button formaction="/WOT_SPAIN">
+                        ☠| WOT SPAIN |☠
+                    </button>
+                    <button formaction="/Donaciones_ESP">
+                        ☠| Donaciones |☠
+                    </button>
+
+                    <select name="Lang-3" onchange="javascript:handleSelect(this)">
+                        <option value="#">
+                            Languages
+                        </option>
+
+                        <option value="/">
+                            English
+                        </option>
+
+                        <option value="/index">
+                            Magyar
+                        </option>
+                    </select>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <section id="showcase">
+        <div id="particles-js"></div>
+        <div class="container">
+
+            <div class="autotype">
+                <span>
+                    <font color="red">root</font>
+                    <font color="yellow">@</font>
+                    <font color="littleblue">startcoding:</font>
+                    <font color="green">~</font>
+                    <font color="yellow">#</font>
+                    <font color="green">
+                        <span id="autotype">
+                            ☠ Wellcome To The Pirate Radio Show!☠
+                            <!-- Auto escribir texto aqui-->
+                        </span>
+                    </font>
+                </span>
+            </div>
+            <section id="main">
+                <div class="ctn">
+                    <ul id="services">
+                        <center>
+                            <li>
+                                <section id="imgrot">
+                                    <div class="carousel_wrapper">
+                                        <div class="carousel">
+                                            <div class="slide one">
+                                                <a href="https://www.youtube.com/channel/UCmd2roksoxIvMrE8R8p6u3g"
+                                                   target="blank_">
+                                                    <img src="{{ url_for('static', filename='img/yt_logo_rgb_light.png')}}">
+                                                </a>
+                                            </div>
+                                            <div class="slide two">
+                                                <a href="https://www.facebook.com/Pirate-Radio-Show-103686634953174"
+                                                   target="blank_">
+                                                    <img src="{{ url_for('static', filename='img/f_logo_RGB-Blue_58.png')}}">
+                                                </a>
+                                            </div>
+                                            <div class="slide three">
+                                                <a href="https://www.twitch.tv/pirateradioshow98"
+                                                   target="blank_">
+                                                    <!-- Ha vita lenne class="yourlink" és a href="#"-->
+                                                    <img src="{{ url_for('static', filename='img/Twitch_Purple_RGB.png')}}">
+                                                </a>
+                                            </div>
+                                            <div class="slide four">
+                                                <a href="https://twitter.com/show_pirate" target="blank_">
+                                                    <img src="{{ url_for('static', filename='img/Twitter_Logo_Blue.png')}}">
+                                                </a>
+                                            </div>
+                                            <div class="slide fifth">
+                                                <a href="https://www.mixcloud.com/redsky98/"
+                                                   target="blank_">
+                                                    <img src="{{ url_for('static', filename='img/BlackOnTransparent.png')}}">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </li>
+                        </center>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </section>
+
+
+    <section id="newsletter">
+        <div class="container">
+            <!-- Radio Aqui-->
+        </div>
+    </section>
+    <section id="boxes">
+        <div class="container">
+            <div class="box">
+                <div class="dark">
+                    <a href="https://www.twitch.tv/pirateradioshow98" target="blank_">
+                        <img src="../../../static/img/Pirate.png">
+                        <h3>Pirate Code</h3>
+                    </a>
+                    <p>Ayuda creceer a nuestros miembros! Dale like y comparte nuestros contenidos! Gracias!!!! ;)</p>
+                </div>
+            </div>
+            <aside id="sidebar">
+                <div class="stage" style="width: 120px; height: 120px;">
+                    <div class="cubespinner">
+                        <div class="face1">
+                            <center>
+                                <form class="money">
+                                    <a href="https://panel.marketagent.com/Register/Account/NewRegistration/en-US?RefUID=3145223 target="_new"><img style="border-style: none; width: 120px; height: 60px" src="http://www.marketagent.com/MA_WebResources/pic/banner/120x60_Marketagent_weiss_US.gif"></a>
+                                </form>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+            <div class="box">
+                <div class="dark">
+                    <a href="https://www.twitch.tv/VieraGuti" target="blank_">
+                        <img src="../../../static/img/Guti.png">
+                        <h3>VieraGuti</h3>
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="dark">
+                    <a href="https://eu.wargaming.net/clans/wot/500008492/" target="_blank">
+                        <img src="../../../static/img/Spain_LOGO.png">
+                        <h3>WOT SPAIN</h3>
+                    </a>
+                    <p>Buscamos Jugadores al Clan! Aplica hoy para jugar con nosotros!</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="dark">
+                    <div style="z-index: 1; position: relative;">
+                        <a href="https://www.twitch.tv/legozgz" target="_blank"><img src="../../../static/img/lego.jpg" /><h3>LEGO</h3></a>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="dark">
+                    <div style="z-index: 1; position: relative;">
+                        <a href="https://www.twitch.tv/beyker1965" target="_blank"><img src="../../../static/img/beyker.png" /><h3>BEYKER</h3></a>
+                    </div>
+                </div>
+            </div>
+            <div class="light">
+                <a href="https://steamcommunity.com/id/Pirate_Code/" target="_blank"><img src="http://steam.mmosvc.com/76561198081563991/v1.png" alt="76561198081563991" /></a>
+            </div>
+            <div class="light">
+                <a href="https://steamcommunity.com/id/Angelviera/" target="_blank"><img src="http://steam.mmosvc.com/76561198281726837/v1.png" alt="76561198281726837" /></a>
+            </div>
+            <aside id="sidebar">
+                <div class="stage" style="width: 240px; height: 120px;">
+                    <div class="cubespinner">
+                        <div class="face2">
+                            <center>
+                                <form class="money">
+                                    <a href="https://www.digitalocean.com/?refcode=2828498cd87d&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge" target="_blank"><img style="border-style: none; width: 120px; height: 60px" src="https://web-platforms.sfo2.cdn.digitaloceanspaces.com/WWW/Badge%201.svg" alt="DigitalOcean Referral Badge" /></a>
+                                </form>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div id="branding">
+                <h2>
+                    <font color="green">☠-|PRS|-☠</font> Diseño Web hecho por: <font color="littleblue">Pirata </font>&copy;
+                    2021
+                </h2>
+            </div>
+        </div>
+    </footer>
+    <!-- Todos los scripts aqui abajo:-->
+    <script type="application/ld+json"
+            src="{{ url_for('static', filename='scripts/particlesjs-config.json')}}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='scripts/landing.min.js')}}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='scripts/main.js')}}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='scripts/scripts.js')}}"></script>
+    <script>
+        var typed = new Typed('#autotype', {
+            strings: [, "./wellcome.exe", "☠ Wellcome To The Pirate Radio Show! ☠", "mono wellcome.exe", "☠ Wellcome To The Pirate Radio Show! ☠", "javac wellcome.java", "sudo java wellcome", "☠ Wellcome To The Pirate Radio Show! ☠", "sudo su", "sudo parrot-upgrade -y", "c++ backdoor.cpp -o backdoor.exe -m64", "sudo touch something.cpp", "javap -c -verbose proton.class", "irb", "jshell", "mkdir new_folder", "cd ..", "chmod +x pirate_radio_show.deb", "sudo dpkg -i pirate_radio_show.deb -y", "g++ safety.cpp -o safety.exe -m64", "sudo apt install program", "nano malware.rust", "cat main.py", "sudo pip3 install bs4", "perl --version", "htop", "sudo apt install mc", "sudo mc", "pwd", "sudo mv session.py rename.py", "pwd", "mono drone.exe", "Hello World!", "rustc --version", "int i = 12;", "./cracking.exe", "import java.util.Scanner;", "iwconfig", "sudo apt install -y tilix"],
+            typeSpeed: 75,
+            backSpeed: 30,
+            loop: true
+        });
+        $.ajax({
+            type: "GET",
+            dataType: "json",
+            src: '/static/scripts',
+            success: function (response) {
+                $("#usercount").empty().append(response.users);
+                $("#machinecount").empty().append(response.machines);
+                $("#challengecount").empty().append(response.challenges);
+            }
+        });
+    </script>
+</body>
+
+</html>

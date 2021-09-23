@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="author" content="Pirate">
+    <meta name="copyright" content="© 2021 PRS">
+    <meta name="description" content="Pirate Radio Show a website that teaches programing while enjoying the video games.">
+    <meta name="keywords" content="pirate, radio, show, anonymous, anonymous radio station, c++, c plus plus, c, c#, linux, coding, tutorial, tutorials, course, learn, courses, hacking, ethical, operating, system, systems, gaming, live, livestream, java, pyhton, python3, flask, websites, web, website, mobile application, mobile, phones, phone, app, applicationrust, free games, youtube, twitch, make, money, online, community, freelancer, freelancers, digital, home office, basics of cpp, cpp, g++, basics of coding, basics of programing, computing, free, games, free games, open, source, open source, maths, mathematics, physics, science, fiction, sience fiction, windows, microsoft, visual studio, visual, studio, source command, commands, syntax, compile, set up, install, source, example, examples, security, cyber, cyber security, english, beginner, c++ for beginners, beginners, ctf, CTF, capture the flag, capture flag, coding challenge, challenge, pen test, penetration, pentest, penetration testing, testing, object oriented programming, object, oriented, key logger, keylogger, key, logger, cloud, hackers, cyber hackers, hactivists, hacktivism, steam, steam punks, punks, punk , steam punk, epic games, epic, GeForce Now, Nvidia, nvidia, NVIDIA, NVidia, geforce, geforce now, exercise, exercises, experiment, experiments, bit, coin, coins, BTC, btc, invite, gifts, gift, crypto, currency, eng">
+    <meta name="Subject" content="Web Page Subject">
+    <meta name="expires" content="never" />
+    <meta name="viewport" content="width=device-width" initial-scale="1.0">
+    <meta name="google-site-verification" content="UMBwmsZQFss_tZhxUd4JMSZglv7_XytJHEbeKGM2b4Q" />
+    <meta http-equiv="content-language" content="en">
+    <meta name="language" content="English">
+    <meta name="Distribution" content="Global">
+    <title>Pirate Radio Show</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style_2.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style_3.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style_4.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/market.css')}}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.png')}}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">☠-|PRS|-☠</span></h1>
+            </div>
+            <nav id="services">
+                <div class="container">
+                    <form>
+                        <button formaction="/">
+                            ☠| HOME |☠
+                        </button>
+                        <select name="Lang-3" onchange="javascript:handleSelect(this);">
+                            <option value="#">
+                                Follow us on:
+                            </option>
+
+                            <option value="https://www.twitch.tv/pirateradioshow98">
+                                ☠| Twitch -PRS- |☠
+                            </option>
+
+                            <option value="https://www.twitch.tv/VieraGuti">
+                                ☠| Twitch VieraGuti|☠
+                            </option>
+
+                            <option value="https://www.twitch.tv/legozgz">
+                                ☠| Twitch -LEGO- |☠
+                            </option>
+
+                            <option value="https://www.twitch.tv/beyker1965">
+                                ☠| Twitch -BEYKER- |☠
+                            </option>
+
+                            <option value="https://www.youtube.com/channel/UC6JWt6KSex34qH7rpokdTpg">
+                                ☠| Youtube -BEYKER- |☠
+                            </option>
+
+                            <option value="https://www.youtube.com/channel/UCmd2roksoxIvMrE8R8p6u3g">
+                                ☠| Youtube -Pirate Code- |☠
+                            </option>
+
+                            <option value="https://www.facebook.com/Pirate-Radio-Show-103686634953174">
+                                ☠| Facebook -PRS- |☠
+                            </option>
+
+                            <option value="https://twitter.com/show_pirate">
+                                ☠| Twitter -PRS- |☠
+                            </option>
+
+                            <option value="https://www.instagram.com/pirateradioshow98/">
+                                ☠| Instagram -PRS- |☠
+                            </option>
+                        </select>
+                        <select name="Lang-3" onchange="javascript:handleSelect(this);">
+                            <option value="#">
+                                ☠| Chat |☠
+                            </option>
+                            <option value="https://s.team/chat/FVI1GpWg">
+                                ☠| Steam |☠
+                            </option>
+                            <option value="https://discord.gg/3t82PbymUc">
+                                ☠| Discord |☠
+                            </option>
+                        </select>
+
+                        <select name="Lang-3" onchange="javascript:handleSelect(this);">
+                            <option value="#">
+                                ☠| 4 Programmers & Developpers |☠
+                            </option>
+
+                            <option value="/Learn_ENG">
+                                ☠| Let'$ Learn 2 Code |☠
+                            </option>
+
+                            <option value="/Pentest_1_ENG">
+                                ☠| HACKING & PENTESTING |☠
+                            </option>
+
+                            <option value="https://github.com/Oscuras98/">
+                                ☠| GitHUB |☠
+                            </option>
+
+                            <option value="https://www.facebook.com/groups/765324447394866">
+                                ☠| Our Facebook Group |☠
+                            </option>
+                        </select>
+
+                        <button formaction="/Free_GAMES_ENG">
+                            ☠| Free Games 4 Everyone! |☠
+                        </button>
+                        <select name="Lang-3" onchange="javascript:handleSelect(this)">
+                            <option value="#">
+                                Languages
+                            </option>
+
+                            <option value="/Donaciones_ESP">
+                                Español
+                            </option>
+
+                            <option value="/Sponzor_HUN">
+                                Magyar
+                            </option>
+                        </select>
+                    </form>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section id="newsletter">
+        <div class="container">
+            <button onClick="javascript:window.open('https://www.humblebundle.com/subscription?refc=4EqVs3', '_blank');">☠| Humbel Bundle |☠</button>
+            <button onClick="javascript:window.open('https://www.coupert.com/ref/dmadtj', '_blank');">☠| Coupert |☠</button>
+            <button onClick="javascript:window.open('https://panel.marketagent.com/Register/Account/NewRegistration/en-US?RefUID=3145223', '_blank');">☠| Market Agent |☠</button>
+            <button onClick="javascript:window.open('https://www.digitalocean.com/?refcode=2828498cd87d&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge', '_blank');">☠| Digital Ocean |☠</button>
+        </div>
+    </section>
+    <section id="main">
+        <div class="container">
+            <article id="main-col">
+                <aside id="sidebar">
+                    <div class="stage" style="width: 120px; height: 120px;">
+                        <div class="cubespinner">
+                            <div class="face1">
+                                <center>
+                                    <form class="money">
+                                        <a href="https://panel.marketagent.com/Register/Account/NewRegistration/en-US?RefUID=3145223 target="_new"><img style="border-style: none; width: 120px; height: 60px" src="http://www.marketagent.com/MA_WebResources/pic/banner/120x60_Marketagent_weiss_US.gif"></a>
+                                    </form>
+                                </center>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+                <h3>My Paypal:</h3>
+                <ul id="services">
+                    <li>
+                        <button onClick="javascript:window.open('https://www.paypal.com/paypalme/pirateradioshow98', '_blank');">Paypal</button>
+                    </li>
+                </ul>
+                <h3>BTC:</h3>
+                <ul id="services">
+                    <li>
+                        <h3>Adress: </h3><p>bitcoin:bc1q7gutzn3pyl4ddrt34sps7pqmcqls9vx453gd8n?message=Pirate%20BTC&time=1631388354</p>
+                        <h3>Request: </h3><p>bitcoin:bc1q7gutzn3pyl4ddrt34sps7pqmcqls9vx453gd8n?message=Pirate%20BTC&time=1631388354</p>
+                    </li>
+                </ul>
+                <aside id="sidebar">
+                    <div class="stage" style="width: 240px; height: 120px;">
+                        <div class="cubespinner">
+                            <div class="face2">
+                                <center>
+                                    <form class="money">
+                                        <a href="https://www.digitalocean.com/?refcode=2828498cd87d&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge" target="_blank"><img style="border-style: none; width: 120px; height: 60px" src="https://web-platforms.sfo2.cdn.digitaloceanspaces.com/WWW/Badge%201.svg" alt="DigitalOcean Referral Badge" /></a>
+                                    </form>
+                                </center>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+                <br />
+                <br />
+                <img src="{{ url_for('static', filename='img/QR.png')}}">
+                <br />
+                <ul id="services">
+                    <li>
+                        <div class="container">
+                            <h2>Support us for free on <a href="https://panel.marketagent.com/Register/Account/NewRegistration/en-US?RefUID=3145223" target="_new">Marketagent:</a></h2>
+                            <br />
+                            <a href="https://panel.marketagent.com/Register/Account/NewRegistration/en-US?RefUID=3145223" target="_new"><img style="border-style: none; width: 120px; height: 60px" src="http://www.marketagent.com/MA_WebResources/pic/banner/120x60_Marketagent_weiss_US.gif"></a>
+                        </div>
+                    </li>
+                </ul>
+                <ul id="services">
+                    <li>
+                        <div class="container">
+                            <h2>Earn 20$ today with your purchases on eBay, Amazon, Aliexpress and many other websites just because of a simple free registration on: <a href="https://www.coupert.com/ref/dmadtj" target="_new">Coupert:</a></h2>
+                            <br />
+                            <a href="https://www.coupert.com/ref/dmadtj" target="_new"><img style="border-style: none; width: 120px; height: 60px" src="https://www.coupert.com/img/coupert_logo.svg?v=923.930" alt=""></a>
+                            <h2>If you would ever feel unconfortable about this registration make sure to check this apps rating in google store then make sure to return to get a free 20$ bonus start by registrating from <a href="https://www.coupert.com/ref/dmadtj" target="_new">hiere</a>!</h2>
+                        </div>
+                    </li>
+                </ul>
+            </article>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div id="branding">
+                <h2>
+                    <font color="green">☠-|PRS|-☠</font> Web Design by: <font color="littleblue">Pirate </font>&copy;
+                    2021
+                </h2>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="{{ url_for('static', filename='scripts/main.js')}}"></script>
+</body>
+</html>

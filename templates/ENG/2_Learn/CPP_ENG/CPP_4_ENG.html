@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="author" content="Pirate">
+    <meta name="copyright" content="© 2021 PRS">
+    <meta name="description" content="Pirate Radio Show a website that teaches programing while enjoying the video games.">
+    <meta name="keywords" content="pirate, radio, show, anonymous, anonymous radio station, c++, c plus plus, c, c#, linux, coding, tutorial, tutorials, course, learn, courses, hacking, ethical, operating, system, systems, gaming, live, livestream, java, pyhton, python3, flask, websites, web, website, mobile application, mobile, phones, phone, app, applicationrust, free games, youtube, twitch, make, money, online, community, freelancer, freelancers, digital, home office, basics of cpp, cpp, g++, basics of coding, basics of programing, computing, free, games, free games, open, source, open source, maths, mathematics, physics, science, fiction, sience fiction, windows, microsoft, visual studio, visual, studio, source command, commands, syntax, compile, set up, install, source, example, examples, security, cyber, cyber security, english, beginner, c++ for beginners, beginners, ctf, CTF, capture the flag, capture flag, coding challenge, challenge, pen test, penetration, pentest, penetration testing, testing, object oriented programming, object, oriented, key logger, keylogger, key, logger, cloud, hackers, cyber hackers, hactivists, hacktivism, steam, steam punks, punks, punk , steam punk, epic games, epic, GeForce Now, Nvidia, nvidia, NVIDIA, NVidia, geforce, geforce now, exercise, exercises, experiment, experiments, bit, coin, coins, BTC, btc, invite, gifts, gift, crypto, currency, eng">
+    <meta name="Subject" content="Web Page Subject">
+    <meta name="expires" content="never" />
+    <meta name="viewport" content="width=device-width" initial-scale="1.0">
+    <meta name="google-site-verification" content="UMBwmsZQFss_tZhxUd4JMSZglv7_XytJHEbeKGM2b4Q" />
+    <meta http-equiv="content-language" content="en">
+    <meta name="language" content="English">
+    <meta name="Distribution" content="Global">
+    <title>Pirate Radio Show</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style_2.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style_3.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style_4.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/market.css')}}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.png')}}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">☠-|PRS|-☠</span></h1>
+            </div>
+            <nav id="services">
+                <div class="container">
+                    <form>
+                        <button formaction="/">
+                            ☠| HOME |☠
+                        </button>
+                        <!-- class="buttons"  error itt Check mobile version with & without class--->
+                        <select name="Lang-3" onchange="javascript:handleSelect(this);">
+                            <option value="#">
+                                Follow us on:
+                            </option>
+
+                            <option value="https://www.twitch.tv/pirateradioshow98">
+                                ☠| Twitch -PRS- |☠
+                            </option>
+
+                            <option value="https://www.twitch.tv/VieraGuti">
+                                ☠| Twitch VieraGuti|☠
+                            </option>
+
+                            <option value="https://www.twitch.tv/legozgz">
+                                ☠| Twitch -LEGO- |☠
+                            </option>
+
+                            <option value="https://www.twitch.tv/beyker1965">
+                                ☠| Twitch -BEYKER- |☠
+                            </option>
+
+                            <option value="https://www.youtube.com/channel/UC6JWt6KSex34qH7rpokdTpg">
+                                ☠| Youtube -BEYKER- |☠
+                            </option>
+
+                            <option value="https://www.youtube.com/channel/UCmd2roksoxIvMrE8R8p6u3g">
+                                ☠| Youtube -Pirate Code- |☠
+                            </option>
+
+                            <option value="https://www.facebook.com/Pirate-Radio-Show-103686634953174">
+                                ☠| Facebook -PRS- |☠
+                            </option>
+
+                            <option value="https://twitter.com/show_pirate">
+                                ☠| Twitter -PRS- |☠
+                            </option>
+
+                            <option value="https://www.instagram.com/pirateradioshow98/">
+                                ☠| Instagram -PRS- |☠
+                            </option>
+                        </select>
+                        <select name="Lang-3" onchange="javascript:handleSelect(this);">
+                            <option value="#">
+                                ☠| Chat |☠
+                            </option>
+                            <option value="https://s.team/chat/FVI1GpWg">
+                                ☠| Steam |☠
+                            </option>
+                            <option value="https://discord.gg/3t82PbymUc">
+                                ☠| Discord |☠
+                            </option>
+                        </select>
+
+                        <select name="Lang-3" onchange="javascript:handleSelect(this);">
+                            <option value="#">
+                                ☠| 4 Programmers & Developpers |☠
+                            </option>
+
+                            <option value="/Learn_ENG">
+                                ☠| Let'$ Learn 2 Code |☠
+                            </option>
+
+                            <option value="/Pentest_1_ENG">
+                                ☠| HACKING & PENTESTING |☠
+                            </option>
+
+                            <option value="https://github.com/Oscuras98/">
+                                ☠| GitHUB |☠
+                            </option>
+
+                            <option value="https://www.facebook.com/groups/765324447394866">
+                                ☠| Our Facebook Group |☠
+                            </option>
+                        </select>
+
+                        <button formaction="Free_GAMES_ENG">
+                            ☠| Free Games 4 Everyone! |☠
+                        </button>
+
+                        <button formaction="/Donations_ENG">
+                            ☠| Donations |☠
+                        </button>
+                        <select name="Lang-3" onchange="javascript:handleSelect(this)">
+                            <option value="#">
+                                Languages
+                            </option>
+
+                            <option value="/CPP_4_ESP">
+                                Español
+                            </option>
+
+                            <option value="/CPP_4_HUN">
+                                Magyar
+                            </option>
+                        </select>
+                    </form>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="newsletter">
+        <div class="container">
+            <select name="Lang-3" onchange="javascript:handleSelect(this)">
+                <option value="#">
+                    C++
+                </option>
+                <option value="/CPP_1_ENG">
+                    Installation
+                </option>
+                <option value="/CPP_2_ENG">
+                    Hello World
+                </option>
+                <option value="/CPP_3_ENG">
+                    Comments
+                </option>
+            </select>
+        </div>
+    </section>
+
+    <section id="main">
+        <div class="container">
+            <article id="main-col">
+                <h3 class="page-title">In the following examples I will show you how to write your own functions within C++</h3>
+                <br />
+                <aside id="sidebar">
+                    <div class="stage" style="width: 240px; height: 120px;">
+                        <div class="cubespinner">
+                            <div class="face2">
+                                <center>
+                                    <form class="money">
+                                        <a href="https://www.digitalocean.com/?refcode=2828498cd87d&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge" target="_blank"><img style="border-style: none; width: 120px; height: 60px" src="https://web-platforms.sfo2.cdn.digitaloceanspaces.com/WWW/Badge%201.svg" alt="DigitalOcean Referral Badge" /></a>
+                                    </form>
+                                </center>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+                <ul id="services">
+                    <li>
+                        <h3>In order to do this we are going to use a library called &lt;cmath&gt; and some maths skills using algebra:</h3>
+                        <pre class='brush: cpp'>
+#include &lt;cmath&gt;
+</pre>
+                </ul>
+                <ul id="services">
+                    <li>
+                        <h3>The first example using &lt;cmath&gt; library</h3>
+                        <pre class='brush: cpp'>
+#include &lt;iostream&gt;
+#include &lt;cmath&gt;
+int main()
+{
+    int x;
+    int y;
+    int z = 0;
+    std::cout << "Enter a whole number: x = ";
+    std::cin >> x;
+    std::cout << "Type an other whole number: y = ";
+    std::cin >> y;
+    z = pow(x, y);
+    std::cout << "x to the power of y is: ";
+    std::cout << z << std::endl;
+    return 0;
+}
+</pre>
+                        <h1><font color="red">Don't worry about the meaning of each line we will go through everything by steps I promise!</font></h1>
+                </ul>
+                <ul id="services">
+                    <h3>Explication:</h3>
+                    <li>
+                        <h3>
+                            <br /><center>int x</center>
+                            <br /><center>int y;</center>
+                        </h3>
+                        <h3>
+                            <font color="red"><br />int in C++ means integer. When I say int x; or anything like that I'm telling to the computer that I want to use a Varable called x or y to store an Integer value. I will cover the datatypes in C++ later!</font>
+                            </font>
+                        </h3>
+                        <h2>Warning: These variables have not been initialized they just have been declared!</h2>
+                    </li>
+                    <li>
+                        <h3>
+                            <br /><center>int z = 0;</center>
+                        </h3>
+                        <h3>
+                            <font color="red"><br />This is a simple integer variable declaration with an initialization with the value of 0. This means that I'm telling to the C++ compiler that we want to use a variable called Z with a type of int which has the initial value of 0!</font>
+                            </font>
+                        </h3>
+                    </li>
+                    <aside id="sidebar">
+                        <div class="stage" style="width: 120px; height: 120px;">
+                            <div class="cubespinner">
+                                <div class="face3">
+                                    <center>
+                                        <form class="money">
+                                            <a href="https://panel.marketagent.com/Register/Account/NewRegistration/en-US?RefUID=3145223 target="_new"><img style="border-style: none; width: 120px; height: 60px" src="http://www.marketagent.com/MA_WebResources/pic/banner/120x60_Marketagent_weiss_US.gif"></a>
+                                        </form>
+                                    </center>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                    <li>
+                        <h3>
+                            <br />std::cout << "Enter a whole number: x = ";
+                            <br />std::cin >> x;
+                        </h3>
+                        <h3>
+                            <font color="red"><br />Like allways </font><font color="black">std:cout << "Some message";</font><font color="red"> stands to print some sort of text message into the terminal / powershell (Computers screen). <br />Now comes the trick in order to make an input we have declared and initalized a few variables such as x , y and z. <br />This is important since if you are trying to make any sort of input you will have to tell to the computer the information with the correct datatype that you are willing to store some sort of data within it's memory (RAM). <br /></font>
+                        </h3>
+                        <br />
+                        <h2>Warning: Data types related with text messages are often called String within the world of programing languages! String data types allways go within double quotes such as "Hello World!"</h2>
+                        <br />
+                        <h2>Keep in mind that I will cover Strings later on this course since we have to go through a lot of steps first!</h2>
+                        <h3>
+                            <font color="red"><br />std:cout << "Some message within double quotes";</font>
+                        </h3>
+                        <br />
+                        <h3>
+                            <font color="red"><br />So after declaring the needed variables with the correct data types to make a simple user input using the Keyboard we use the syntax: std::cin >> x;</font>
+                        </h3>
+                        <h2>Warning: x, y and z variable names can be renamed freely but if you do you will have to change the names in every places for example:</h2>
+                        <br />
+                        <pre class='brush: cpp'>
+#include &lt;iostream&gt;
+#include &lt;cmath&gt;
+int main()
+{
+    int any_NAME_1;
+    int  any_NAME_2;
+    int  any_NAME_3 = 0;
+    std::cout << "Enter a whole number: any_NAME_1 = ";
+    std::cin >> any_NAME_1;
+    std::cout << "Type an other whole number: any_NAME_2 = ";
+    std::cin >> any_NAME_2;
+    any_NAME_3 = pow(any_NAME_1, any_NAME_2);
+    std::cout << "any_NAME_1 to the power of any_NAME_2 is: ";
+    std::cout << any_NAME_3 << std::endl;
+    return 0;
+}
+</pre>
+                        <h2>The program over this text will just work the same way as the previous one!</h2>
+                    </li>
+                    <li>
+                        <h3>
+                            <br />To be honest with you we haven't wrote our function we just used a prebuilt function from a Library called &lt;cmath&gt; [C Maths]. Which is a exponent calculator tool. To be honest with you we used this tool the bad way since it should be used with an other data type but since our compiler is smart it will give us a simple warning instead of giving errors. <br />The warning pretty much will tell us to use decimal numbers since integer numbers will lead to lose of data which means that we will only get the integer and nothing behind the coma as decimals.
+                        </h3>
+                        <h3>
+                            <font color="red">
+                                <br />So within our code #include &lt;cmath&gt; means that we are willing to import the [C Language's Math Library]. <br />
+                                <br />Therefore the following code means that z which had already a value of 0 will be equal x to the power of y therefore z won't stay 0 untill (x >= 0 and y >= 0 since anything to the power of 0 is equal to 1 and 0 to the power of anything except 0 is 0).
+                            </font>
+                        </h3>
+                        <h3>
+                            <br />Syntax within our code to use exponents in C++ bellow hiere:<br />
+                            <br />z = pow(x, y);
+                        </h3>
+                    </li>
+                </ul>
+                <aside id="sidebar">
+                    <div class="stage" style="width: 120px; height: 120px;">
+                        <div class="cubespinner">
+                            <div class="face1">
+                                <center>
+                                    <form class="money">
+                                        <a href="https://panel.marketagent.com/Register/Account/NewRegistration/en-US?RefUID=3145223 target="_new"><img style="border-style: none; width: 120px; height: 60px" src="http://www.marketagent.com/MA_WebResources/pic/banner/120x60_Marketagent_weiss_US.gif"></a>
+                                    </form>
+                                </center>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+                <ul id="services">
+                    <h3>Writing our own functions:</h3>
+                    <li>
+                        <pre class='brush: cpp'>
+#include &lt;iostream&gt;
+// Showing how to call simple functions
+// Displaying text on the terminal (Screen)
+void DemonstrationFunction()
+{
+std::cout << "We are inside the DemonstrationFunction!\n";
+}
+// The main method will display a message on our screen then
+// it will call our Function called: DemonstrationFunction,
+// in the end it will display an other message in to our screen!
+int main()
+{
+std::cout << "Now we are inside the main method!\n";
+DemonstrationFunction();
+std::cout << "We are inside the main method again!\n";
+return 0;
+}
+</pre>
+                    </li>
+                    <li>
+                        <h2><font color="red">Out put:</font></h2><br />
+                        <h3>
+                            Now we are inside the main method!<br />
+                            We are inside the DemonstrationFunction!<br />
+                            We are inside the main method again!<br />
+                        </h3>
+                    </li>
+                    <li>
+                        <br /><h2><font color="red">Explication:</font></h2><br />
+                        <h3>
+                            <br />We use the void to use functions then we must name the function and put simple brackets such as this () after we must use these characters {} in order to write our parameters within them!<br />
+                        </h3>
+                        <pre class='brush: cpp'>
+#include &lt;iostream&gt;
+void it_can_Have_Any_Sort_OF_NAME()
+{
+// Any sort of parameters go hiere!
+std::cout << "You can use it for many things including calculations but I will cover that later in details!" << endl;
+}
+int main()
+{
+it_can_Have_Any_Sort_OF_NAME()
+return 0;
+}
+</pre>
+                    </li>
+                    <li>
+                        <h3>The meaning of: \n</h3><br />
+                        <h2>\n within the first code means that we will leave an [ENTER] after the text message on the screen!<br /></h2>
+                        <h3>The meaning of: std::endl;</h3>
+                        <h2>std::endl; means the same thing and you are free to use both of them as you want for now!<br /></h2>
+                        <h2>
+                            <font color="red">
+                                Example:<br />
+                            </font>
+                        </h2>
+                        <br />
+                        <pre class='brush: cpp'>
+#include &lt;iostream&gt;
+int main()
+{
+std::cout << "First example\n for\n\n line breaking!\n";
+std::cout << "Second example for line breaking!" << std::endl;
+std::cout << "First example without line breaking!";
+std::cout << " Second example without line breaking!";
+return 0;
+}
+                        </pre>
+                    </li>
+                    <aside id="sidebar">
+                        <div class="stage" style="width: 240px; height: 120px;">
+                            <div class="cubespinner">
+                                <div class="face5">
+                                    <center>
+                                        <form class="money">
+                                            <a href="https://www.digitalocean.com/?refcode=2828498cd87d&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge" target="_blank"><img style="border-style: none; width: 120px; height: 60px" src="https://web-platforms.sfo2.cdn.digitaloceanspaces.com/WWW/Badge%201.svg" alt="DigitalOcean Referral Badge" /></a>
+                                        </form>
+                                    </center>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                    <li>
+                        <h2><font color="red">Out put:</font></h2>
+                        <br />
+                        <h3>
+                            First example<br />
+                            for<br /><br />
+                            line breaking!<br />
+                            Second example for line breaking!<br />
+                            First example without line breaking! Second example without line breaking!
+                        </h3>
+                    </li>
+                    <li>
+                        <h2><font color="red">The meaning of void</font></h2>
+                        <br />
+                        <h3>
+                            <br />A function must allways return some sort of data in case if this statement is not true we use the void keyword! Therefore my previous example will not return any sort of data to our program!
+                        </h3>
+                    </li>
+                </ul>
+            </article>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div id="branding">
+                <h1>
+                    <font color="green">☠-|PRS|-☠</font> Web Design by: <font color="littleblue">Pirate </font>&copy;
+                    2021
+                </h1>
+            </div>
+        </div>
+    </footer>
+</body>
+<script type="text/javascript" src="{{ url_for('static', filename='scripts/main.js')}}"></script>
+</html>

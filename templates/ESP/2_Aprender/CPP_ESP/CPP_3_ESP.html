@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="author" content="Pirate">
+    <meta name="copyright" content="© 2021 PRS">
+    <meta name="description" content="Pirate Radio Show a website that teaches programing while enjoying the video games.">
+    <meta name="keywords" content="pirate, radio, show, anonymous, anonymous radio station, c++, c plus plus, c, c#, linux, coding, tutorial, tutorials, course, learn, courses, hacking, ethical, operating, system, systems, gaming, live, livestream, java, pyhton, python3, flask, websites, web, website, mobile application, mobile, phones, phone, app, applicationrust, free games, youtube, twitch, make, money, online, community, freelancer, freelancers, digital, home office, basics of cpp, cpp, g++, basics of coding, basics of programing, computing, free, games, free games, open, source, open source, maths, mathematics, physics, science, fiction, sience fiction, windows, microsoft, visual studio, visual, studio, source command, commands, syntax, compile, set up, install, source, example, examples, security, cyber, cyber security, english, beginner, c++ for beginners, beginners, ctf, CTF, capture the flag, capture flag, coding challenge, challenge, pen test, penetration, pentest, penetration testing, testing, object oriented programming, object, oriented, key logger, keylogger, key, logger, cloud, hackers, cyber hackers, hactivists, hacktivism, steam, steam punks, punks, punk , steam punk, epic games, epic, GeForce Now, Nvidia, nvidia, NVIDIA, NVidia, geforce, geforce now, exercise, exercises, experiment, experiments, bit, coin, coins, BTC, btc, invite, gifts, gift, crypto, currency, eng">
+    <meta name="Subject" content="Web Page Subject">
+    <meta name="expires" content="never" />
+    <meta name="viewport" content="width=device-width" initial-scale="1.0">
+    <meta name="google-site-verification" content="UMBwmsZQFss_tZhxUd4JMSZglv7_XytJHEbeKGM2b4Q" />
+    <meta http-equiv="content-language" content="es">
+    <meta name="language" content="Spanish">
+    <meta name="Distribution" content="Global">
+    <title>Pirata Radio Show</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style_2.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style_3.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style_4.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/market.css')}}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.png')}}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">☠-|PRS|-☠</span></h1>
+            </div>
+            <nav id="services">
+                <div class="container">
+                    <form>
+                        <button formaction="/inicio">
+                            ☠| Inicio |☠
+                        </button>
+                        <!-- class="buttons"  error itt Check mobile version with & without class--->
+                        <select name="Lang-3" onchange="javascript:handleSelect(this);">
+                            <option value="#">
+                                Sigue nos en:
+                            </option>
+
+                            <option value="https://www.twitch.tv/pirateradioshow98">
+                                ☠| Twitch -PRS- |☠
+                            </option>
+
+                            <option value="https://www.twitch.tv/VieraGuti">
+                                ☠| Twitch VieraGuti|☠
+                            </option>
+
+                            <option value="https://www.twitch.tv/legozgz">
+                                ☠| Twitch -LEGO- |☠
+                            </option>
+
+                            <option value="https://www.twitch.tv/beyker1965">
+                                ☠| Twitch -BEYKER- |☠
+                            </option>
+
+                            <option value="https://www.youtube.com/channel/UC6JWt6KSex34qH7rpokdTpg">
+                                ☠| Youtube -BEYKER- |☠
+                            </option>
+
+                            <option value="https://www.youtube.com/channel/UCmd2roksoxIvMrE8R8p6u3g">
+                                ☠| Youtube -Pirate Code- |☠
+                            </option>
+
+                            <option value="https://www.facebook.com/Pirate-Radio-Show-103686634953174">
+                                ☠| Facebook -PRS- |☠
+                            </option>
+
+                            <option value="https://twitter.com/show_pirate">
+                                ☠| Twitter -PRS- |☠
+                            </option>
+
+                            <option value="https://www.instagram.com/pirateradioshow98/">
+                                ☠| Instagram -PRS- |☠
+                            </option>
+                        </select>
+                        <select name="Lang-3" onchange="javascript:handleSelect(this);">
+                            <option value="#">
+                                ☠| Chat |☠
+                            </option>
+                            <option value="https://s.team/chat/FVI1GpWg">
+                                ☠| Steam |☠
+                            </option>
+                            <option value="https://discord.gg/3t82PbymUc">
+                                ☠| Discord |☠
+                            </option>
+                        </select>
+                        <select name="Lang-3" onchange="javascript:handleSelect(this);">
+                            <option value="#">
+                                ☠| Para Programadores: |☠
+                            </option>
+
+                            <option value="/Aprender_ESP">
+                                ☠| Estudia Programación |☠
+                            </option>
+
+                            <option value="/Penetracion_1_ESP">
+                                ☠| HACKING Y PENETRACIÓN DE SISTEMAS |☠
+                            </option>
+
+                            <option value="https://github.com/Oscuras98/">
+                                ☠| GitHUB |☠
+                            </option>
+
+                            <option value="https://www.facebook.com/groups/765324447394866">
+                                ☠| Grupo de Facebook |☠
+                            </option>
+                        </select>
+                        <button formaction="/Juegos_GRATIS_ESP">
+                            ☠| Videojuegos Gratis |☠
+                        </button>
+                        <button formaction="/WOT_SPAIN">
+                            ☠| WOT SPAIN |☠
+                        </button>
+                        <button formaction="/Donaciones_ESP">
+                            ☠| Donaciones |☠
+                        </button>
+                        <select name="Lang-3" onchange="javascript:handleSelect(this)">
+                            <option value="#">
+                                Languages
+                            </option>
+
+                            <option value="/CPP_3_ENG">
+                                English
+                            </option>
+
+                            <option value="/CPP_3_HUN">
+                                Magyar
+                            </option>
+                        </select>
+                    </form>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="newsletter">
+        <div class="container">
+            <select name="Lang-3" onchange="javascript:handleSelect(this)">
+                <option value="#">
+                    C++
+                </option>
+                <option value="/CPP_1_ESP">
+                    Instalación
+                </option>
+                <option value="/CPP_2_ESP">
+                    Hola Mundo!
+                </option>
+                <option value="/CPP_4_ESP">
+                    Funciones y Exponentes! Lo básico de &lt;cmath&gt;
+                </option>
+            </select>
+        </div>
+    </section>
+    <section id="main">
+        <div class="container">
+            <article id="main-col">
+                <h1 class="page-title">Como crear comentarios en una programa escrita en c++?</h1>
+                <br />
+                <aside id="sidebar">
+                    <div class="stage" style="width: 240px; height: 120px;">
+                        <div class="cubespinner">
+                            <div class="face2">
+                                <center>
+                                    <form class="money">
+                                        <a href="https://www.digitalocean.com/?refcode=2828498cd87d&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge" target="_blank"><img style="border-style: none; width: 120px; height: 60px" src="https://web-platforms.sfo2.cdn.digitaloceanspaces.com/WWW/Badge%201.svg" alt="DigitalOcean Referral Badge" /></a>
+                                    </form>
+                                </center>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+                <ul id="services">
+                    <li>
+                        <h3>Nuestro codigo de fuente original fue:</h3>
+                        <pre class='brush: cpp'>
+#include &lt;iostream&gt;
+int main()
+{
+    std::cout << "Hola Mundo!\n";
+    return 0;
+}
+</pre>
+                </ul>
+                <ul id="services">
+                    <li>
+                        <h3>El comentario más simple es escribiendo //</h3>
+                        <pre class='brush: cpp'>
+#include &lt;iostream&gt;
+int main()
+{
+    // Nuestro primer comentario en c++!
+    std::cout << "Hola Mundo!\n";// Este también es un comentario!
+    return 0;//Nuestro tercero comentario!
+    // Otro comentario!
+}
+</pre>
+                        <p>Al ejecutar nuestra programa podemos ver nuestro mensage hacia al mundo diciendo: "Hola Mundo".<h1>Por lo tanto <font color="red">los comentarios no están ejecutados!</font></h1></p>
+                </ul>
+                <ul id="services">
+                    <li>
+                        <h3>Otro tipo de comentario en el ejemplo:</h3>
+                        <pre class='brush: cpp'>
+#include &lt;iostream&gt;
+int main()
+{
+    /* Este
+    es
+    un
+    comentario
+    en
+    multiple
+    lineas!*/
+    std::cout << "Hola Mundo!\n";/* Nuestro segundo
+    comentario en multiples
+    Lineas!
+    */
+    return 0;/*Nuestro tercero comentario!*/
+    /*Este tipo de comentario también puede estár escrita en una linea simple!*/
+}
+</pre>
+                        <h3><font color="red">Como la mencioné ahora los comentarios no están ejecutados al correr una programa! Solo sirven para dejar explicaciones en el fuente de codigo para los desarolladores!</font></h3>
+                    </li>
+                </ul>
+                <aside id="sidebar">
+                    <div class="stage" style="width: 120px; height: 120px;">
+                        <div class="cubespinner">
+                            <div class="face1">
+                                <center>
+                                    <form class="money">
+                                        <a href="https://panel.marketagent.com/Register/Account/NewRegistration/en-US?RefUID=3145223 target="_new"><img style="border-style: none; width: 120px; height: 60px" src="http://www.marketagent.com/MA_WebResources/pic/banner/120x60_Marketagent_weiss_US.gif"></a>
+                                    </form>
+                                </center>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+                <br />
+            </article>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container">
+            <div id="branding">
+                <h2>
+                    <font color="green">☠-|PRS|-☠</font> Diseño Web hecho por: <font color="littleblue">Pirata </font>&copy;
+                    2021
+                </h2>
+            </div>
+        </div>
+    </footer>
+</body>
+<script type="text/javascript" src="{{ url_for('static', filename='scripts/main.js')}}"></script>
+</html>

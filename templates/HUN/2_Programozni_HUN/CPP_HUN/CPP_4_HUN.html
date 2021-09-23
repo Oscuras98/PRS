@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="author" content="Pirate">
+    <meta name="copyright" content="© 2021 PRS">
+    <meta name="description" content="Pirate Radio Show a website that teaches programing while enjoying the video games.">
+    <meta name="keywords" content="pirate, radio, show, anonymous, anonymous radio station, c++, c plus plus, c, c#, linux, coding, tutorial, tutorials, course, learn, courses, hacking, ethical, operating, system, systems, gaming, live, livestream, java, pyhton, python3, flask, websites, web, website, mobile application, mobile, phones, phone, app, applicationrust, free games, youtube, twitch, make, money, online, community, freelancer, freelancers, digital, home office, basics of cpp, cpp, g++, basics of coding, basics of programing, computing, free, games, free games, open, source, open source, maths, mathematics, physics, science, fiction, sience fiction, windows, microsoft, visual studio, visual, studio, source command, commands, syntax, compile, set up, install, source, example, examples, security, cyber, cyber security, english, beginner, c++ for beginners, beginners, ctf, CTF, capture the flag, capture flag, coding challenge, challenge, pen test, penetration, pentest, penetration testing, testing, object oriented programming, object, oriented, key logger, keylogger, key, logger, cloud, hackers, cyber hackers, hactivists, hacktivism, steam, steam punks, punks, punk , steam punk, epic games, epic, GeForce Now, Nvidia, nvidia, NVIDIA, NVidia, geforce, geforce now, exercise, exercises, experiment, experiments, bit, coin, coins, BTC, btc, invite, gifts, gift, crypto, currency, eng">
+    <meta name="Subject" content="Web Page Subject">
+    <meta name="expires" content="never" />
+    <meta name="viewport" content="width=device-width" initial-scale="1.0">
+    <meta name="google-site-verification" content="UMBwmsZQFss_tZhxUd4JMSZglv7_XytJHEbeKGM2b4Q" />
+    <meta http-equiv="content-language" content="hu">
+    <meta name="content-language" content="hu, hun, hungarian">
+    <meta name="Distribution" content="Global">
+    <title>Pirate Radio Show</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style_2.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style_3.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style_4.css')}}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.png')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/market.css')}}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">☠-|PRS|-☠</span></h1>
+            </div>
+            <nav id="services">
+                <div class="container">
+                    <form>
+                        <button formaction="/index">
+                            ☠| Kezdőlap |☠
+                        </button>
+                        <!-- class="buttons"  error itt Check mobile version with & without class--->
+                        <select name="Lang-3" onchange="javascript:handleSelect(this);">
+                            <option value="#">
+                                Follow us on:
+                            </option>
+
+                            <option value="https://www.twitch.tv/pirateradioshow98">
+                                ☠| Twitch -PRS- |☠
+                            </option>
+
+                            <option value="https://www.twitch.tv/VieraGuti">
+                                ☠| Twitch VieraGuti|☠
+                            </option>
+
+                            <option value="https://www.twitch.tv/legozgz">
+                                ☠| Twitch -LEGO- |☠
+                            </option>
+
+                            <option value="https://www.twitch.tv/beyker1965">
+                                ☠| Twitch -BEYKER- |☠
+                            </option>
+
+                            <option value="https://www.youtube.com/channel/UC6JWt6KSex34qH7rpokdTpg">
+                                ☠| Youtube -BEYKER- |☠
+                            </option>
+
+                            <option value="https://www.youtube.com/channel/UCmd2roksoxIvMrE8R8p6u3g">
+                                ☠| Youtube -Pirate Code- |☠
+                            </option>
+
+                            <option value="https://www.facebook.com/Pirate-Radio-Show-103686634953174">
+                                ☠| Facebook -PRS- |☠
+                            </option>
+
+                            <option value="https://twitter.com/show_pirate">
+                                ☠| Twitter -PRS- |☠
+                            </option>
+
+                            <option value="https://www.instagram.com/pirateradioshow98/">
+                                ☠| Instagram -PRS- |☠
+                            </option>
+                        </select>
+                        <select name="Lang-3" onchange="javascript:handleSelect(this);">
+                            <option value="#">
+                                ☠| Chat |☠
+                            </option>
+                            <option value="https://s.team/chat/FVI1GpWg">
+                                ☠| Steam |☠
+                            </option>
+                            <option value="https://discord.gg/3t82PbymUc">
+                                ☠| Discord |☠
+                            </option>
+                        </select>
+
+                        <select name="Lang-3" onchange="javascript:handleSelect(this);">
+                            <option value="#">
+                                ☠| Programozáshoz: |☠
+                            </option>
+
+                            <option value="/Programozni_HUN">
+                                ☠| Tanulj meg programozni |☠
+                            </option>
+
+                            <option value="/Pentest_1_ENG">
+                                ☠| HACKING & PENTESZTELÉS |☠
+                            </option>
+
+                            <option value="https://github.com/Oscuras98/">
+                                ☠| GitHUB |☠
+                            </option>
+
+                            <option value="https://www.facebook.com/groups/765324447394866">
+                                ☠| Fejlesztői Facebook Csoport |☠
+                            </option>
+                        </select>
+
+                        <button formaction="Free_JATEKOK_HUN">
+                            ☠| Ingyenesen beszerezhető Játékok! |☠
+                        </button>
+
+                        <button formaction="/Sponzor_HUN">
+                            ☠| Sponzorálás |☠
+                        </button>
+
+                        <select name="Lang-3" onchange="javascript:handleSelect(this)">
+                            <option value="#">
+                                Languages
+                            </option>
+
+                            <option value="/CPP_4_ENG">
+                                English
+                            </option>
+
+                            <option value="/CPP_4_ESP">
+                                Español
+                            </option>
+                        </select>
+                    </form>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="newsletter">
+        <div class="container">
+            <select name="Lang-3" onchange="javascript:handleSelect(this)">
+                <option value="#">
+                    C++
+                </option>
+                <option value="/CPP_1_HUN">
+                    Telepítés
+                </option>
+                <option value="/CPP_2_HUN">
+                    Heló Világ!
+                </option>
+                <option value="/CPP_3_HUN">
+                    Kommentek avagy Megjegyzések
+                </option>
+            </select>
+        </div>
+    </section>
+    <section id="main">
+        <div class="container">
+            <article id="main-col">
+                <h3 class="page-title">A következő példákban szeretném bemutatni hogyan írjunk saját függvényeket C++ -ban!</h3>
+                <br />
+                <aside id="sidebar">
+                    <div class="stage" style="width: 240px; height: 120px;">
+                        <div class="cubespinner">
+                            <div class="face2">
+                                <center>
+                                    <form class="money">
+                                        <a href="https://www.digitalocean.com/?refcode=2828498cd87d&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge" target="_blank"><img style="border-style: none; width: 120px; height: 60px" src="https://web-platforms.sfo2.cdn.digitaloceanspaces.com/WWW/Badge%201.svg" alt="DigitalOcean Referral Badge" /></a>
+                                    </form>
+                                </center>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+                <ul id="services">
+                    <li>
+                        <h3>Jelen esetben a következő könyvtárat fogjuk használni mely alap részét képzi a C++ eszköztárházának &lt;cmath&gt;. Ezen kívül egy kis matekra (Algebrára) fogunk támaszkodni.</h3>
+                        <pre class='brush: cpp'>
+#include &lt;cmath&gt;
+</pre>
+                </ul>
+                <ul id="services">
+                    <li>
+                        <h3>Az első példám a &lt;cmath&gt; könyvtárhasználatról!</h3>
+                        <pre class='brush: cpp'>
+#include &lt;iostream&gt;
+#include &lt;cmath&gt;
+int main()
+{
+    setlocale(LC_ALL, "hun");
+    int x;
+    int y;
+    int z = 0;
+    std::cout << "Írjon be egy egész számot: x = ";
+    std::cin >> x;
+    std::cout << "Írjon be egy második egész számot is: y = ";
+    std::cin >> y;
+    z = pow(x, y);
+    std::cout << "x az y -ra emelve: ";
+    std::cout << z << std::endl;
+    return 0;
+}
+</pre>
+                        <h1><font color="red">Jelen esetben meg kell kérnem a kedves olvasót hogy még ne foglalkozzon minden sor jelentésével ugyan is végig fogunk rajta menni lépésről lépésre!</font></h1>
+                </ul>
+                <ul id="services">
+                    <h3>Magyarázat avagy a Deklarációs folyamat:</h3>
+                    <li>
+                        <h3>
+                            <br /><center>int x;</center>
+                            <br /><center>int y;</center>
+                        </h3>
+                        <h3>
+                            <font color="red"><br />A C++ nyelvben az egész számokat tőbb féle mód is le lehet foglalni a használni kívánt változókhoz. Ennek egyik példája az int mint integer azaz egész szám!<br /> Tehát ha azt írom be a programba hogy int x (ahol x bármilyen változó névvel szerepelhet ékezetek nélkül pl: int Ez_IS_egY_VALTOZO) akkor azt közlöm a géppel hogy egy egész tipusú értéknek szeretnék lefoglalni tár területet valahol a memóriában!</font>
+                            </font>
+                        </h3>
+                        <h2>Figyelem: A programozási világban van egy fajta terminus amelyet úgy neveznek inicializáció ez azt a pillanatot jelenti amikor egy adott változónak az értékét megadjuk tehát az előbbi int x; -es és int y; -os példánál a változóink nem lettek inicalizálva csak úgy mond <font color="red"> DEKLARÁLVA</font>!</h2>
+                    </li>
+                    <h3>Inicializálás:</h3>
+                    <li>
+                        <h3>
+                            <br /><center>int z = 0;</center>
+                        </h3>
+                        <h3>
+                            <font color="red"><br />Így néz ki egy síma egész tipusú szám inicializálva melynek kezdő értéke 0. Tehát ezt a compile úgy érzékeli hogy valahol a memória mélyén el kell helyezni egy int tipusú változót z néven melynek kezdő értéke 0! <br /> De mi is az a compiler? Nyers leszek az a része a C++ -nak mely a valamilyen.cpp fájl állományt fordít a gépnek érthető, futtatható nullákra és egyesekre a részletekre még nem térnék ki.</font>
+                            </font>
+                        </h3>
+                    </li>
+                    <aside id="sidebar">
+                        <div class="stage" style="width: 120px; height: 120px;">
+                            <div class="cubespinner">
+                                <div class="face3">
+                                    <center>
+                                        <form class="money">
+                                            <a href="https://panel.marketagent.com/Register/Account/NewRegistration/en-US?RefUID=3145223 target="_new"><img style="border-style: none; width: 120px; height: 60px" src="http://www.marketagent.com/MA_WebResources/pic/banner/120x60_Marketagent_weiss_US.gif"></a>
+                                        </form>
+                                    </center>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                    <li>
+                        <h3>
+                            <br />setlocale(LC_ALL, "hun");
+                            <br />std::cout << "Írjon be egy egész számot: x = ";
+                            <br />std::cin >> x;
+                        </h3>
+                        <h3>
+                            <font color="red"><br />Mint mindig az </font><font color="black">std:cout << "Bármilyen szöveges információ.";</font><font color="red"> program részletét arra használjuk hogy valamilyen szöveget megjelenítsünk a terminál-ban avagy powershell-ben.<br />Ez eddig mind szép és jó de hogyan vegyem rá a gépet hogy befogadja azt az információt amit én gépelek?<br />A válasz egyszerű ahhoz hogy a gép befogadó képes legyen első feladatunk deklarálni néhány változót hogy lefoglaljunk némi tárhelyet a számítógép memóriájában (A RAM-ban) az adatoknak.<br /></font>
+                        </h3>
+                        <br />
+                        <h2>Figyelem: Az adat tipusokon belül a programozás világában a szöveges adatokat rendszerint STRING-nek vagy STRINGEK-nek nevezzük!<br />A String tipusú adatokat mindig macskakörömmel nyitjuk és zárjuk pl: "Helló Világ!"</h2>
+                        <br />
+                        <h2>A Stringek kapcsán fogok még példákat hozni a későbbiekben!</h2>
+                        <h3>
+                            <font color="red"><br />std:cout << "Valamilyen üzenet macska körmök között!!!";</font>
+                            </font>
+                        </h3>
+                        <h3>C++ ban a következő kódot kell elhelyezni a main metódus elejére hogy ékezetekkel is dolgozhassunk:</h3>
+                        <pre class='brush: cpp'>
+    setlocale(LC_ALL, "hun");
+</pre>
+                        <br />
+                        <h3>
+                            <font color="red"><br />Vissza térve a kérdésre ahhoz hogy valamilyen adatot felvetessünk a gépbe a billentyűzetről már nyílvánvalóvá vált hogy le kell foglalnunk neki némi tárhelyet valamilyen változó formájában és annak rendelkeznie kell egy bizonyos adattípussal. Eztuán jön a következő C++ kód amely ezt lehetővé teszi:</font>
+                            <font color="red"><br />std::cin >> x;</font>
+                        </h3>
+                        <h2>Figyelem: x, y és z változó nevek bármikor átnevezhetőek de ha erre sor kerül bármikor a kód többi részében is le kell cserélni ezeket a neveket.</h2>
+                        <br />
+                        <h2>A következő kód ugyan azokat a feladatokat látja el mint az elöző példa csak hogy ezt szemléltessem:</h2>
+                        <br />
+                        <pre class='brush: cpp'>
+#include &lt;iostream&gt;
+#include &lt;cmath&gt;
+int main()
+{
+    setlocale(LC_ALL, "hun");
+    int valtozo_Nev_1;
+    int  Valtozo_neV_2;
+    int  VALtozO_NEV_3 = 0;
+    std::cout << "Írjon be egy egész számot: valtozo_Nev_1 = ";
+    std::cin >> valtozo_Nev_1;
+    std::cout << "Írjon be egy második egész számot is: Valtozo_neV_2 = ";
+    std::cin >> Valtozo_neV_2;
+    VALtozO_NEV_3 = pow(valtozo_Nev_1, Valtozo_neV_2);
+    std::cout << "valtozo_Nev_1 az Valtozo_neV_2 -re emelve: ";
+    std::cout << VALtozO_NEV_3 << std::endl;
+    return 0;
+}
+</pre>
+                        <h2>Amint látható a végeredmény ugyan az a Magyar nyelvtani ragozást leszámítva de ez csak részlet kérdés amit nyugodtan figyelmen kívűl lehet hagyni tekintve hogy ez csak a sajátos odafigyelésem!</h2>
+                    </li>
+                    <li>
+                        <h3>
+                            <br />Ha viszont igazat szeretnék mondani eddig egy saját függvényt sem hoztunk létre csupán a C++ nyelvnek a könyvtárából az eggyik sajátos elemét hívtuk meg és alkalmaztuk pontosabban a  &lt;cmath&gt; könyvtár eggyik saját beépített függvényét.
+                            <br />Ami azt illeti ezt az eszközt sem a megfelelő módon használtuk tekintve hogy ez a beépített függvény tört tipusú adatot várna el de tekintettel hogy a C++ okos tudja hogy ha egész számokat használunk mint a példánkban nem lesz semmi baj de tekintettel hogy maga a COMPILER is okos jelzi nekünk ezt a kis dolgot egy Warning -jelzéssel!
+                            <br />Fontos tudni hogy ezt is csak azért teszi hogy ne veszítsünk el adatot amikor begépelünk egy bizonyos számot a programunkba. Ez azért van mert ha tört számot szeretnénk megadni evvel a példa programmal akkor konverziós adatvesztést fogunk tapasztalni.
+                            <br />Ez annyit tesz hogy a programunk-ba beírjunk egy tört számot legyen az a 3.14 a PI értéke és ekkor a program ha ennek valahanyadik hatványát számolná akkor bizony kerekítené a számot és a tizedes jegyeket úgy mond lecsapná.
+                            <br />Ha véletlen nem hinnél nekem ezt a sort olvasva próbáld csak ki hogy az első szám helyére 2-őt írsz a második helyére pedig 3.14-et. Mit tapasztalunk? Megsúgom az eredmény 8.
+                        </h3>
+                        <h3>
+                            <font color="red">
+                                <br />Szóval az #include &lt;cmath&gt; kód része ezt jelenti hogy importáljuk a C nyelv Matek könyvtárát és annak összes beépített funkciója így elérhetővé válik számunkra az adott programban. <br />
+                                <br />Ennek hála észrevehető hogy z változó melynek kezdő értéke 0 egyenlő x változó érékével abban az esetben ha x az y változó-ra van emelve avagy z=x<sup>y</sup> persze alapvető matematikai követelményeink is vannak melyeket itt találhatunk: (x >= 0 és y >= 0 mivel bármely 0-nál nagyobb számot 0-ra emelve egyenlő 1-el és 0 összes hatványa 0 kivéve önmaga hatványa mert azt a mai napig nem értelmezték a matematika világában).
+                            </font>
+                        </h3>
+                        <h3>
+                            <br />Hogyan hatványozzunk C++-ban? Mi a syntaxis?
+                            <br />A válasz egyszerű:
+                            <br />z = pow(x, y);
+                        </h3>
+                    </li>
+                </ul>
+                <aside id="sidebar">
+                    <div class="stage" style="width: 120px; height: 120px;">
+                        <div class="cubespinner">
+                            <div class="face1">
+                                <center>
+                                    <form class="money">
+                                        <a href="https://panel.marketagent.com/Register/Account/NewRegistration/en-US?RefUID=3145223 target="_new"><img style="border-style: none; width: 120px; height: 60px" src="http://www.marketagent.com/MA_WebResources/pic/banner/120x60_Marketagent_weiss_US.gif"></a>
+                                    </form>
+                                </center>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+                <ul id="services">
+                    <h3>Az első saját függvényünk:</h3>
+                    <li>
+                        <pre class='brush: cpp'>
+#include &lt;iostream&gt;
+// Bemutató hogyan kell függvényeket meghívni
+// Üzenet kiírása a képernyőre
+void demonstralo_Fuggveny()
+{
+std::cout << "Most a demonstralo_Fuggveny -ben vagyunk!\n";
+}
+// A main metódus megmutat egy üzenetet a kijelzőn
+// ezután meghívja a függvényünket melyet demonstralo_Fuggveny - névvel láttam el
+// a végén pedig kiír egy második üzenetet.
+int main()
+{
+setlocale(LC_ALL, "hun");
+std::cout << "Most a main metódus-ban vagyunk!\n";
+demonstralo_Fuggveny();
+std::cout << "Megint a main metódus-ban vagyunk!\n";
+return 0;
+}
+</pre>
+                    </li>
+                    <li>
+                        <h2><font color="red">Végeredmény:</font></h2><br />
+                        <h3>
+                            Most a main metódus-ban vagyunk!<br />
+                            Most a demonstralo_Fuggveny -ben vagyunk!<br />
+                            Megint a main metódus-ban vagyunk!<br />
+                        </h3>
+                    </li>
+                    <li>
+                        <br /><h2><font color="red">Magyarázat:</font></h2><br />
+                        <h3>
+                            <br />A void kulcs szót akkor használjuk ha a függvényünk nem térít vissza adatot. Maga a void szó után a függvény elnevezése következik melyet zárójel párral kell ellátni jelezvén a compiler-nek hogy ez egy függvény. Aztután kapcsos zárójelben elhelyezzük a függvényünk paramétereit és funkcióit avagy utasításait.
+                            <br />
+                        </h3>
+                        <pre class='brush: cpp'>
+#include &lt;iostream&gt;
+void barmilyen_EKEz3t_3s_SpaciaL_KarakTerMentes_Mentes_Nev3T_HasznaLhatunk()
+{
+// Minden Paramétert ide kell fellvenni
+std::cout << "Bármilyen fajta függvényt szabadon létrehozhatunk hogy könnyítse a számításiankat!" << endl;
+}
+int main()
+{
+setlocale(LC_ALL, "hun");
+barmilyen_EKEz3t_3s_SpaciaL_KarakTerMentes_Mentes_Nev3T_HasznaLhatunk()
+return 0;
+}
+</pre>
+                    </li>
+                    <li>
+                        <h3>A \n jelentése</h3><br />
+                        <h2>\n egy szimpla [ENTER] -t jelent!<br /></h2>
+                        <h3>Az std::endl; jelentése</h3>
+                        <h2>std::endl; ez is egy szimpla [ENTER] -t jelent de eltérő módón használhatók!<br /></h2>
+                        <h2>
+                            <font color="red">
+                                Példa:<br />
+                            </font>
+                        </h2>
+                        <br />
+                        <pre class='brush: cpp'>
+#include &lt;iostream&gt;
+int main()
+{
+setlocale(LC_ALL, "hun");
+std::cout << "Első példa \n egy szimpla\n\n sortörés bemutatáshoz!\n";
+std::cout << "Második példa a sortörés bemutatáshoz!" << std::endl;
+std::cout << "Sortörés nélküli példa sor!";
+std::cout << " Második példa sortörés nélkül!";
+return 0;
+}
+                        </pre>
+                    </li>
+                    <aside id="sidebar">
+                        <div class="stage" style="width: 240px; height: 120px;">
+                            <div class="cubespinner">
+                                <div class="face5">
+                                    <center>
+                                        <form class="money">
+                                            <a href="https://www.digitalocean.com/?refcode=2828498cd87d&utm_campaign=Referral_Invite&utm_medium=Referral_Program&utm_source=badge" target="_blank"><img style="border-style: none; width: 120px; height: 60px" src="https://web-platforms.sfo2.cdn.digitaloceanspaces.com/WWW/Badge%201.svg" alt="DigitalOcean Referral Badge" /></a>
+                                        </form>
+                                    </center>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                    <li>
+                        <h2><font color="red">Kimenet avagy a végeredmény:</font></h2>
+                        <br />
+                        <h3>
+                            Első példa<br />
+                             egy szimpla<br /><br />
+                             sortörés bemutatáshoz!<br />
+                            Második példa a sortörés bemutatáshoz!<br />
+                            Sortörés nélküli példa sor! Második példa sortörés nélkül!
+                        </h3>
+                    </li>
+                    <li>
+                        <h2><font color="red">Függvények használata</font></h2>
+                        <br />
+                        <h3>
+                            <br />Mint már mondtam egy függvény vagy egyetlen adattal tér vissza, vagy semmivel. Ha semmivel ahogy az iménti példában is mutattam a vissza térési értéke void , ami azt jelenti , hogy nem ad vissza semmit a hívó félnek. Ha esetleg egy más fajta függvényről lenne szó mondjuk ami hatványoz vagy más számítást végez akkor nyílván érdemes valamilyen szám tipusú adatot elhelyezni benne visszatérési értékként.
+                            <br />Lásd a következő felyezetben!
+                        </h3>
+                    </li>
+                </ul>
+            </article>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div id="branding">
+                <h2>
+                    <font color="green">☠-|PRS|-☠</font> Web Design by: <font color="littleblue">Pirate </font>&copy;
+                    2021
+                </h2>
+            </div>
+        </div>
+    </footer>
+</body>
+<script type="text/javascript" src="{{ url_for('static', filename='scripts/main.js')}}"></script>
+</html>
